@@ -1,0 +1,68 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/images"
+    tools:context=".Identity_Information" >
+
+    <EditText
+        android:id="@+id/bday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/day"
+        android:layout_centerVertical="true"
+        android:ems="10"
+        android:onClick="set"
+        android:hint="@string/bday"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/id_no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bday"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="54dp"
+        android:ems="10"
+        android:hint="@string/id"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/id_no"
+        android:layout_below="@+id/bday"
+        android:layout_marginTop="34dp"
+        android:ems="10"
+        android:onClick="set"
+        android:textStyle="bold" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+      
+        android:id="@+id/sex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/day"
+        android:layout_below="@+id/day"
+        android:layout_marginTop="41dp"
+        android:onClick="set"
+        android:ems="10"
+        
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/sex"
+        android:layout_below="@+id/sex"
+        android:layout_marginRight="22dp"
+        android:onClick="set"
+        android:text="Check"
+        android:textStyle="bold" />
+
+</RelativeLayout>
